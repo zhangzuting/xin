@@ -16,8 +16,6 @@ hostname = api.kuaisho*.com
 hostname = open.kuaisho*.com
 */
  
-on:
-    - cron: '0 2-17 * * *'
 const $$ = Envcc('');
 let acckey = $$["isNode"]() ? process["env"]["cdkey"] ? process["env"]["cdkey"] : '' : $$["getdata"]("cdkey") ? $$["getdata"]("cdkey") : '',
     all_msg = '',
